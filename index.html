@@ -16,26 +16,41 @@
 </head>
 <body>
     <table summary="Tabela refrente às idades ds alunos" border="1" width="250" align="center" cellspacing="4" cellpadding="5">
-        <tr> <!--TR -> Table Row -> São as linhas da tabela-->
-            <td>Nome</td>
-            <td>Idade</td>
-        </tr>
-        <tr>
-            <td>Gabriel</td>
-            <td>33</td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>34</td>
-        </tr>
-        <tr>
-            <td>Walter</td>
-            <td>39</td>
-        </tr>
-        <tr>
-            <td>José</td>
-            <td>56</td>
-        </tr>
+
+        <thead>
+            <tr> <!--TR -> Table Row -> São as linhas da tabela-->
+                <th title="Nome Completo">Nome</th>
+                <th>Idade</th> <!--TH -> Table Head -> Informe que é o cabeçalho da tabela-->
+            </tr>
+        </thead>
+       
+
+        <tbody>
+            <tr>
+                <td>Gabriel</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Walter</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>56</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+       
     </table>
 </body>
 </html>
