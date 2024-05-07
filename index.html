@@ -5,22 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com Tabelas</title>
     <style>
-        table tr:nth-child(even) {
-            background-color: aquamarine;
-        }
-
-        table tr:hover td {
-            background-color: blanchedalmond;
-        }
+            table thead th{
+                background-color: black;
+                color: aliceblue;
+            }
+            table tfoot td {
+                background-color: lightgray;
+            }
+            table tbody tr:nth-child(even) td {
+                background-color: blanchedalmond;
+            }
+            table tbody tr:hover td{
+                background-color: #f1f1f1;
+                cursor: pointer;
+            }
     </style>
 </head>
 <body>
-    <table summary="Tabela refrente às idades ds alunos" border="1" width="250" align="center" cellspacing="4" cellpadding="5">
+    <table summary="Tabela refrente às idades ds alunos"  width="250" align="center" cellspacing="0" cellpadding="5">
 
         <thead>
+            <tr>
+                <th colspan="2">Minha Tabela</th>
+            </tr>
             <tr> <!--TR -> Table Row -> São as linhas da tabela-->
                 <th title="Nome Completo">Nome</th>
                 <th>Idade</th> <!--TH -> Table Head -> Informe que é o cabeçalho da tabela-->
+
+                <!-- Colspan -> Mescla colunas na tabela
+                     Rowspan -> Mescla linhas na tabela -->
             </tr>
         </thead>
        
